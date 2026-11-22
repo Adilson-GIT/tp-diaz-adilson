@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buscador de episodios · Rick and Morty</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+    <script src="js/app.js" defer></script>
+  </head>
+  <body>
+    <header class="encabezado">
+      <h1>Episodios de Rick and Morty</h1>
+      <p class="encabezado-detalle">Busca por nombre y filtra por temporada</p>
+    </header>
+
+    <main class="contenedor">
+      <section class="panel" aria-labelledby="titulo-buscador">
+        <h2 id="titulo-buscador">Buscador</h2>
+
+        <form id="formulario-busqueda" novalidate>
+          <div class="grupo">
+            <label for="campo-nombre">Nombre del episodio</label>
+            <input type="text" id="campo-nombre" maxlength="60" placeholder="Ej.: pilot" autocomplete="off" />
+          </div>
+
+          <div class="grupo">
+            <label for="campo-temporada">Temporada</label>
+            <select id="campo-temporada">
+              <option value="">Todas</option>
+              <option value="S01">S01</option>
+              <option value="S02">S02</option>
+              <option value="S03">S03</option>
+              <option value="S04">S04</option>
+              <option value="S05">S05</option>
+            </select>
+          </div>
+
+          <button type="submit" id="boton-buscar" class="boton">Buscar</button>
+        </form>
+      </section>
+
+      <!-- Mensajes de estado: buscando, aviso, sin resultados, error y éxito -->
+      <p id="mensaje" class="mensaje" role="status" aria-live="polite"></p>
+
+      <!-- Tarjetas: se crean con JavaScript a partir de los datos de la API -->
+      <section id="resultados" class="tarjetas" aria-label="Resultados de la búsqueda"></section>
+    </main>
+
+    <footer class="pie">
+      <p>Adilson Emanuel Diaz Vera · Fundamentos de Desarrollo Web · Trabajo Práctico</p>
+    </footer>
+  </body>
+</html>

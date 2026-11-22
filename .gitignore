@@ -1,0 +1,17 @@
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Dependencias
+node_modules/
+
+# Variables de entorno y secretos
+.env
+
+# Configuración del editor
+.vscode/
+
+# Archivos comprimidos y registros
+*.zip
+*.log
