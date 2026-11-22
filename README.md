@@ -11,7 +11,7 @@ y ver sus datos principales sin recorrer listados extensos.
 ## Sitios publicados
 
 - GitHub Pages: https://adilson-git.github.io/tp-diaz-adilson/
-- Vercel: _(se agrega después del despliegue)_
+- Vercel: https://tp-diaz-adilson.vercel.app/
 
 ## Captura
 
